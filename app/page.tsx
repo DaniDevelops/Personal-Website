@@ -1,5 +1,6 @@
 import Photo from "@/components/my-components/Photo";
 import Socials from "@/components/my-components/Socials";
+import Stats from "@/components/my-components/Stats";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
@@ -48,6 +49,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 }

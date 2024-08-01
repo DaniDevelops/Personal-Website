@@ -1,5 +1,9 @@
-import React from "react";
+import ResumeContent from "@/components/my-components/ResumeContent";
 
 export default function Resume() {
-  return <div>Resume</div>;
+  return (
+    <>
+      <ResumeContent />
+    </>
+  );
 }

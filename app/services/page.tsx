@@ -1,5 +1,9 @@
-import React from "react";
+import ServicesContent from "@/components/my-components/ServicesContent";
 
 export default function Services() {
-  return <div>Services</div>;
+  return (
+    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+      <ServicesContent />
+    </section>
+  );
 }
