@@ -18,9 +18,7 @@ export default function ContactForm() {
       <form className="flex flex-col gap-6 p-10 rounded-xl bg-#27272c">
         <h3 className="text-4xl text-accent">Let&apos;s Work Together</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-          eveniet tenetur beatae esse ab omnis tempore deserunt ipsa eum
-          asperiores.
+          Let&apos;s bring your vision to life with precision and creativity! 🌟
         </p>
         {/* Input */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -37,10 +35,10 @@ export default function ContactForm() {
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Select a Service</SelectLabel>
-              <SelectItem value="est">Web Development</SelectItem>
-              <SelectItem value="cst">Web Development</SelectItem>
-              <SelectItem value="mst">Web Development</SelectItem>
-              <SelectItem value="est">Web Development</SelectItem>
+              <SelectItem value="est">Website Development</SelectItem>
+              <SelectItem value="cst">Responsive Design Integration</SelectItem>
+              <SelectItem value="mst">Performance Optimization</SelectItem>
+              <SelectItem value="est">SEO Optimization</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>

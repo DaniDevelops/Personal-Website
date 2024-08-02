@@ -119,7 +119,7 @@ export default function ResumeContent() {
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-8 items-center justify-center mb-10">
                     <h2 className="text-lg lg:text-xl mb-2">Education</h2>
                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                       {education.education.map((item, index) => (
@@ -141,7 +141,7 @@ export default function ResumeContent() {
                       ))}
                     </ul>
                   </div>
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-4 items-center justify-center mb-10">
                     <h2 className="text-lg lg:text-xl mb-2">Skills</h2>
                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                       {education.skills.map((skill, index) => (
@@ -162,8 +162,8 @@ export default function ResumeContent() {
                       ))}
                     </ul>
                   </div>
-                  <div className="flex flex-col gap-4">
-                    <h2 className="text-lg lg:text-xl mb-2">Education</h2>
+                  <div className="flex flex-col gap-4 items-center justify-center mb-10">
+                    <h2 className="text-lg lg:text-xl mb-2">Certification</h2>
                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                       {education.certifications.map((certification, index) => (
                         <li

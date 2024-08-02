@@ -13,42 +13,45 @@ const socials = [
   {
     app: "linkedIn",
     appIcon: <FaLinkedin />,
-    profileLink: "",
+    profileLink:
+      "https://www.linkedin.com/in/daniel-nwafor-64b22a247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     app: "github",
     appIcon: <FaGithub />,
-    profileLink: "",
+    profileLink: "https://github.com/DaniDevelops",
   },
   {
     app: "whatsapp",
     appIcon: <FaWhatsapp />,
-    profileLink: "",
+    profileLink: "https://wa.me/message/74A2N4IVCMVXF1",
   },
   {
     app: "twitter",
     appIcon: <FaXTwitter />,
-    profileLink: "",
+    profileLink: "https://x.com/danidevelops?s=11",
   },
   {
     app: "threads",
     appIcon: <FaThreads />,
-    profileLink: "",
+    profileLink: "https://www.threads.net/@danidev3lops",
   },
   {
     app: "facebook",
     appIcon: <FaFacebook />,
-    profileLink: "",
+    profileLink:
+      "https://www.facebook.com/profile.php?id=61560421033590&mibextid=LQQJ4d",
   },
   {
     app: "instagram",
     appIcon: <FaInstagram />,
-    profileLink: "",
+    profileLink:
+      "https://www.instagram.com/danidev3lops?igsh=c2sxMWhmdTQ5eGln&utm_source=qr",
   },
   {
     app: "telegram",
     appIcon: <FaTelegram />,
-    profileLink: "",
+    profileLink: "https://t.me/Danidev#lops",
   },
 ];
 

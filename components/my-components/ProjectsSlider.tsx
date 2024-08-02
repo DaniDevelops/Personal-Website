@@ -49,7 +49,7 @@ export default function ProjectsSlider() {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/*  tools used*/}
-              <ul>
+              <ul className="flex gap-4 flex-wrap">
                 {project.tools.map((tool, index) => (
                   <li key={index} className="text-xl text-accent">
                     {tool}
@@ -63,7 +63,7 @@ export default function ProjectsSlider() {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live website */}
-                <Link href={project.liveWebsite}>
+                <Link href={project.liveWebsite} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center text-3xl items-center group">

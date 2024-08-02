@@ -22,7 +22,7 @@ export default function Photo() {
           className="w-[298px] h-[298px] xl:h-[498px] xl:w-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="/profile-placeholder.png"
+            src="/profile.png"
             priority
             quality={100}
             fill
