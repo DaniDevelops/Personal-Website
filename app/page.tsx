@@ -1,8 +1,7 @@
+import DownloadBtn from "@/components/my-components/DownloadBtn";
 import Photo from "@/components/my-components/Photo";
 import Socials from "@/components/my-components/Socials";
 import Stats from "@/components/my-components/Stats";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
 
 export default function Home() {
   return (
@@ -28,14 +27,7 @@ export default function Home() {
             </p>
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <Download />
-              </Button>
+              <DownloadBtn />
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6 flex-wrap"
