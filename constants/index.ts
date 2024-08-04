@@ -170,7 +170,7 @@ export const projects = [
     title: "Nike Landing Page",
     description:
       "Developed a sleek, responsive landing page for a Nike Product Launch. This project showcases clean modern design, responsive layout and performance optimization",
-    tools: ["Html5", "Css", "javacript", "React"],
+    tools: ["Html5", "Css", "javacript", "React", "TailwindCss"],
     image: "/Nike.png",
     liveWebsite: "https://nike-landing-page-jade-nine.vercel.app/",
     githubRepo: "https://github.com/DaniDevelops/Nike-Landing-Page.git",
@@ -181,7 +181,7 @@ export const projects = [
     title: "Brainwave AI Landing",
     description:
       "Developed a sleek, responsive landing page for a Modern AI tool. This project showcases clean ultra-modern design, responsive layout and performance optimization",
-    tools: ["Html5", "Css", "javacript", "React"],
+    tools: ["Html5", "Css", "javacript", "React", "TailwindCss"],
     image: "/Brainwave.webp",
     liveWebsite: "https://brainwave-three-coral.vercel.app/",
     githubRepo: "https://github.com/DaniDevelops/Brainwave.git",
