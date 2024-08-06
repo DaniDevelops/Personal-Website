@@ -17,13 +17,16 @@ import { FaGithub } from "react-icons/fa";
 import SwiperBtns from "./SwiperBtns";
 
 export default function ProjectsSlider() {
-  const [project, setProject] = useState(projects[0]);
+  const [project, setProject] = useState(projects[projects.length - 1]);
   function handleSlideChange(swiper: SwiperClass) {
     //  get current slide index
-    const currIndex = swiper.activeIndex;
+    const currIndex = Math.abs(swiper.activeIndex - (projects.length - 1));
+    console.log(currIndex);
+
     // update project state based on index
     setProject(projects[currIndex]);
   }
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -99,23 +102,26 @@ export default function ProjectsSlider() {
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {projects.map((project) => (
-                <SwiperSlide key={project.num} className="w-full">
-                  <div className="h-[460px] relative items-center flex justify-center group bg-pink-50/20">
-                    {/* overlay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
-                    {/* Image */}
-                    <div className="relative h-full w-full">
-                      <Image
-                        src={project.image}
-                        fill
-                        alt="project image"
-                        className="object-cover"
-                      />
+              {projects
+                .map((_, index) => index)
+                .sort((a, b) => (projects[a] > projects[b] ? 1 : -1))
+                .map((index) => (
+                  <SwiperSlide key={projects[index].num} className="w-full">
+                    <div className="h-[460px] relative items-center flex justify-center group bg-pink-50/20">
+                      {/* overlay */}
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
+                      {/* Image */}
+                      <div className="relative h-full w-full">
+                        <Image
+                          src={projects[index].image}
+                          fill
+                          alt="project image"
+                          className="object-cover"
+                        />
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
+                  </SwiperSlide>
+                ))}
               <SwiperBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_ - _22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl: justify-none"
                 buttonStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all "

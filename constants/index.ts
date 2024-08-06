@@ -245,4 +245,15 @@ export const projects = [
     liveWebsite: "https://mern-booking-app-diye.onrender.com",
     githubRepo: "https://github.com/DaniDevelops/mern-booking-app.git",
   },
+  {
+    num: "06",
+    category: "frontend",
+    title: "Iphone 15 Landing Page",
+    description:
+      "Developed a sleek, responsive landing page for the iPhone 15 with animations and 3D rendering using GSAP and Threejs respectively",
+    tools: ["Html5", "Css", "javacript", "React", "ThreeJs", "GSAP"],
+    image: "/Iphone15.png",
+    liveWebsite: "https://i-phone-15-landing-page.vercel.app/",
+    githubRepo: "https://github.com/DaniDevelops/iPhone-15-landing-page.git",
+  },
 ];
