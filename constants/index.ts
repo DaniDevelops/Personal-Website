@@ -112,7 +112,7 @@ export const experience = {
   experience: [
     {
       company: "SkyHighCopy",
-      role: "Freelance Developer",
+      role: "Frontend Developer",
       description:
         "Frontend developer incharge of building and maintaining a Website for a small marketing agency on wordpress using tools like nextjs and integrating wordpress's Headless CMS",
       duration: "March 2023 - June 2024",

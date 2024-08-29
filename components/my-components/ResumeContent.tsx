@@ -80,7 +80,7 @@ export default function ResumeContent() {
             <TabsTrigger value="aboutMe">About</TabsTrigger>
           </TabsList>
           {/* resume content */}
-          <div className="min-h-[70vh] w-full">
+          <div className="min-h-[80vh] w-full">
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col text-center gap-[30px] xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
@@ -92,7 +92,7 @@ export default function ResumeContent() {
                     {experience.experience.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="bg-[#232329] h-[240px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                       >
                         <span className="text-accent">{item.duration}</span>
                         <h3 className="text-xl max-w-[26opx] min-h-[60px] text-center lg:text-left">
